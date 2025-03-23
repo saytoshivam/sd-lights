@@ -35,4 +35,15 @@ document.addEventListener("DOMContentLoaded", function () {
             };
         })
         .catch(error => console.error("Error loading products:", error));
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            .then(function() {
+                alert('Email sent successfully!');
+            }, function(error) {
+                alert('Failed to send email. Please try again later.');
+            });
+    });
 });
