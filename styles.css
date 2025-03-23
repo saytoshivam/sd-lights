@@ -41,6 +41,11 @@ nav ul li a {
     justify-content: center;
 }
 
+.about {
+    padding: 50px 20px;
+    margin: 20px 0;
+}
+
 .why-us {
     background: linear-gradient(to right, #66d2f3, #032e48); /* Add gradient background */
     padding: 50px 0;
@@ -49,6 +54,11 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.quality {
+    padding: 50px 20px;
+    margin: 20px 0;
 }
 
 .contact {
