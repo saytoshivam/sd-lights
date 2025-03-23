@@ -46,4 +46,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert('Failed to send email. Please try again later.');
             });
     });
+
+    // GSAP animations with Intersection Observer
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.id;
+                if (id === "home") {
+                    gsap.from("#home", { duration: 1, x: "-100%", opacity: 0 });
+                } else if (id === "about") {
+                    gsap.from("#about", { duration: 1, x: "100%", opacity: 0 });
+                } else if (id === "products") {
+                    gsap.from("#products", { duration: 1, x: "-100%", opacity: 0 });
+                } else if (id === "quality") {
+                    gsap.from("#quality", { duration: 1, x: "100%", opacity: 0 });
+                } else if (id === "whyus") {
+                    gsap.from("#whyus", { duration: 1, x: "-100%", opacity: 0 });
+                } else if (id === "contact") {
+                    gsap.from("#contact", { duration: 1, x: "100%", opacity: 0 });
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
