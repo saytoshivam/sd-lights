@@ -47,6 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 
+    // Close navbar on scroll
+    window.addEventListener('scroll', function() {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+        }
+    });
+
     // GSAP animations with Intersection Observer
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver((entries, observer) => {
