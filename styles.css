@@ -32,6 +32,17 @@ nav ul li a {
     padding: 50px 0;
 }
 
+.why-us {
+    background: linear-gradient(to right, #66d2f3, #032e48); /* Add gradient background */
+    padding: 50px 0;
+    color: white;
+}
+
+.contact {
+    background: linear-gradient(to right, #66d2f3, #032e48);  /* Add gradient background */
+    padding: 50px 0;
+    color: white;
+}
 
 .contact form {
     display: flex;
