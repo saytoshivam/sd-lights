@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let productHTML = `
                     <div class="product-item">
                         <div class="product-slider">
-                            ${product.images.map(img => `<img src="./images/${img}" alt="${product.name} Image">`).join('')}
+                            ${product.images.map(img => `<img src="images/${img}" alt="${product.name} Image">`).join('')}
                         </div>
                         <h3>${product.name}</h3>
                         <p><strong>Wattage:</strong> ${product.wattage}</p>

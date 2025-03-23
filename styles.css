@@ -27,7 +27,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background: url('./images/wallpaperbetter.jpg') no-repeat center center/cover;
     color: white;
     padding: 50px 0;
 }
@@ -52,7 +52,6 @@ button {
     padding: 10px;
     border: none;
 }
-
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -66,11 +65,33 @@ button {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
 }
 .product-item img {
     width: 100%;
     height: auto;
     max-height: 200px;
     object-fit: cover;
-    border-radius: 8px;
 }
+.slideshow-container img:first-child {
+    display: block;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.prev { left: 5px; }
+.next { right: 5px; }
