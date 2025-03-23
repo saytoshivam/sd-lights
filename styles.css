@@ -77,7 +77,7 @@ button {
     width: 100%;
     height: auto;
     max-height: 200px;
-    object-fit: cover;
+    object-fit: contain; /* Ensure the full image is visible */
     display: none; /* Hide all images by default */
 }
 .slideshow-container img:first-child {
