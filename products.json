@@ -1,0 +1,35 @@
+[
+    {
+        "name": "LED Bulbs",
+        "wattage": "18W, 20W",
+        "lightColor": "Cool White",
+        "frequency": "50Hz",
+        "voltage": "220V ~ 240V",
+        "lumens": "130LM/Watt",
+        "warranty": "1 Year",
+        "origin": "Made in India",
+        "images": ["light1-1.jpeg", "light1-2.jpeg", "light1-3.jpeg"]
+    },
+    {
+        "name": "Smart Lights",
+        "wattage": "18W, 20W",
+        "lightColor": "Cool White",
+        "frequency": "50Hz",
+        "voltage": "220V ~ 240V",
+        "lumens": "130LM/Watt",
+        "warranty": "1 Year",
+        "origin": "Made in India",
+        "images": ["light2-1.jpeg", "light2-2.jpeg", "light2-3.jpeg"]
+    },
+    {
+        "name": "Decorative Lights",
+        "wattage": "18W, 20W",
+        "lightColor": "Cool White",
+        "frequency": "50Hz",
+        "voltage": "220V ~ 240V",
+        "lumens": "130LM/Watt",
+        "warranty": "1 Year",
+        "origin": "Made in India",
+        "images": ["light3-1.jpeg", "light3-2.jpeg", "light3-3.jpeg"]
+    }
+]
